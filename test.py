@@ -5,7 +5,7 @@ import jwt
 token = id.detect_credential("sigstore")
 assert token
 
-print (token)
+print (id.decode_oidc_token(token))
 
 claims = jwt.decode(
   token,
