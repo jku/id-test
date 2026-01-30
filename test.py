@@ -2,7 +2,7 @@ import id
 import jwt 
 
 
-token = id.detect_credential()
+token = id.detect_credential("sigstore")
 assert token
 
 print (token)
