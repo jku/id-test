@@ -11,6 +11,6 @@ jobs:
       - uses: actions/checkout@v4
       - name: Run a multi-line script
         run: |
-          pip install jwt
+          pip install pyjwt
           pip install "id @ git+https://github.com/di/id.git@main"
           python3 test.py
