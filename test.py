@@ -2,7 +2,7 @@ import id
 import jwt 
 
 
-token = id.detect_credentials()
+token = id.detect_credential()
 assert token
 
 print (token)
