@@ -8,7 +8,7 @@ assert token
 print (token)
 
 claims = jwt.decode(
-  raw_token,
+  token,
   options={
     "verify_signature": False,
     "verify_aud": True,
