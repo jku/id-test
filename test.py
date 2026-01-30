@@ -5,8 +5,11 @@ import jwt
 token = id.detect_credential("sigstore")
 assert token
 
-print (id.decode_oidc_token(token))
-
+header, payload, sig = id.decode_oidc_token(token)
+print("HEADER", header)
+print("PAYLOAD", payload)
+print("SIG", sig)
+print("---")
 claims = jwt.decode(
   token,
   options={
